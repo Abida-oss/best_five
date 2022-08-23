@@ -27,7 +27,8 @@
                         <img src="images/Messi.png" class="card-img-top" alt="...">
                     </div>
                     <div class="text-center">
-                        <h5 class="text-center">Messi</h5>
+                        <h5 class="text-center font-bold ">Messi</h5>
+                        <p>36 Goals & 120 Assist</p>
                         <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2"  onclick="addPlayer(this);disable(this);">SELECT</button>
                     </div>
                 </div>
@@ -36,9 +37,101 @@
                         <img src="images/Renato.png" class="card-img-top w-100" alt="...">
                     </div>
                     <div class="text-center">
-                        <h5 class="text-center">Renato</h5>
+                        <h5 class="text-center font-bold ">Renato</h5>
+                        <p>36 Goals & 120 Assist</p>
                         <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2 "  onclick="addPlayer(this);disable(this);"  >SELECT</button>
                     </div>
+                </div>
+
+                <div class="bg-gray-900 text-white rounded-lg">
+                    <div class=" ">
+                        <img src="images/kylian.png" class="card-img-top " alt="...">
+                    </div>
+                    <div class=" text-center">
+                        <h5 class="text-center font-bold ">Kylian</h5>
+                        <p>36 Goals & 120 Assist</p>
+                        <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2 " onclick="addPlayer(this);disable(this);" >SELECT</button>
+                    </div>
+                </div>
+    
+                <div class="bg-gray-900 text-white rounded-lg">
+                    <div class="bg-secondary mt-2 ">
+                        <h5 class="text-center text-2xl  font-bold">Selected-V</h5>
+                        <div id="select">
+                            <ol class="text-center text-3xl font-bold">
+    
+                            </ol>
+                        </div>  
+    
+                    </div>
+                </div>
+                <div class="main-box bg-gray-900 text-white rounded-lg">
+                    <div class=" ">
+                        <img src="images/naymer.png" class="card-img-top w-100 h-75" alt="...">
+                    </div>
+                    <div class="text-center">
+                        <h5 class="text-center font-bold ">Naymer</h5>
+                        <p>36 Goals & 120 Assist</p>
+                        <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2 "   onclick=" addPlayer(this);disable(this);">SELECT</button>
+                    </div>
+                </div>
+                <div class="main-box bg-gray-900 text-white rounded-lg">
+                    <div class=" ">
+                        <img src="images/Sergio.png" class="card-img-top  h-100" alt="...">
+                    </div>
+                    <div class="text-center">
+                        <h5 class="text-center font-bold ">Sergio</h5>
+                        <p>36 Goals & 120 Assist</p>
+                        <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2 "   onclick=" addPlayer(this);disable(this);" >SELECT</button>
+                    </div>
+                </div>
+                <div class=" main-box bg-gray-900 text-white rounded-lg">
+                    <div class=" ">
+                        <img src="images/vitor.png" class="card-img-top  h-100 " alt="...">
+                    </div>
+                    <div class=" text-center">
+                        <h5 class="text-center font-bold ">Vitor</h5>
+                        <p>36 Goals & 120 Assist</p>
+                        <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2"  onclick=" addPlayer(this);disable(this);">SELECT</button>
+                    </div>
+                </div>
+                <div class="bg-gray-900 text-white rounded-lg row-span-2">
+                    <div class="mt-2">
+                        <h5 class=" text-2xl text-center font-bold mb-4">Budget</h5>
+                        <div class="flex mt-5">
+                            <label class="w-9/12 inline ml-3">Per Player</label>
+                            <input type="text" name="username" class="w-full inline mr-6 bg-gray-800 "
+                                id="per-player-amount">
+    
+                        </div><br>
+    
+                    </div>
+                    <div clas="mt-7">
+                        <div>
+                            <button class=" px-20 py-2 mx-8 bg-indigo-900 font-bold text-white text-center rounded-lg" id="cal-all-player-expense">Calculate</button>
+                            <h1 class="w-9/12 inline ml-3 mt-6">Player expense</h1>
+                            <h1 class="w-9/12 inline ml-12 mt-6 ">$<span id="set"></span></h1>
+                        </div>
+    
+                        <div class="flex mt-5">
+                            <label class="w-9/12 inline ml-3">Manager</label>
+                            <input type="text" name="username" class="w-9/12 inline mr-6 bg-gray-800 " id="manager-salary">
+                        </div><br>
+                    </div>
+                    <div class="mt-5">    
+                        <div class="flex mt-5">
+                            <label class="w-9/12 inline ml-3">Coach</label>
+                            <input type="text" name="username" class="w-9/12 inline mr-6 bg-gray-800 " id="coach-salary">
+    
+                        </div><br>
+                        <button class="px-20 py-2 mx-2 font-bold bg-indigo-900 text-white text-center rounded-lg" id="cal-total">Calculate Total</button>
+                    </div>
+                    <div class="my-5">
+    
+                        <h1 class="w-11/12 inline ml-6">Total</h1>
+                        <h1 class="w-9/12 inline ml-20 mt-6 ">$<span id="set-total"></span></h1>
+                    </div>    
+    
                 </div>
 
             </div>
