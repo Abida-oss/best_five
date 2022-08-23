@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2.2.7/dist/tailwind.min.css" rel="stylesheet">
-    <title>Player Selector Website</title>
+    <title>Best Five Website</title>
 </head>
+
 <body class="bg-gray-800">
     <header>
         <section class="block">
             <div class="inline mb-5">
-              <h1 class="text-center pt-10 text-yellow-600 font-bold text-5xl">Select Your Favourite Five Players</h1>
-              <img src="images/Line Marker.png"  class="ml-60" alt="">
-              <p class="text-center text-yellow-600 py-10 text-violet-200 font-bold text-1xl">Cricket is the most popular sport in the world. <br>It is played in every corner of the world and every young and old age people enjoy Cricket. <br> Here you can see some top players list. </p>         
-              
+                <h1 class="text-center pt-10 text-yellow-600 font-bold text-5xl italic">Select Your Favourite Five
+                    Players</h1>
+                <img src="images/Line Marker.png" class="ml-60" alt="">
+                <p class="text-center text-yellow-600 py-10 text-violet-200 font-bold text-1xl">Cricket is the most
+                    popular sports in the world. <br>It is played in every corner of the world and every young and old
+                    age people enjoy Cricket. <br> Here you can see some top players list. </p>
+
             </div>
-          </section>
-    
+        </section>
+
     </header>
     <main>
         <section class="my-5">
-            <div class="bg-gree-200 grid grid-cols-4 grid-rows-4 gap-6 mx-40">
+            <div class="grid grid-cols-4 grid-rows-4 gap-6 mx-40">
                 <div class="bg-gray-900 text-white rounded-lg">
-                    <div class=" ">
-                        <img src="images/Messi.png" class="card-img-top" alt="...">
+                    <div class="">
+                        <img src="images/Messi.png" class="card-img-top bg-cover" alt="...">
                     </div>
                     <div class="text-center">
                         <h5 class="text-center font-bold" id="messi">Messi</h5>
                         <p>36 Goals & 120 Assist</p>
-                          <button class="mb-5 px-12 bg-indigo-900 text-white border-2"  onclick="addPlayer(this);disable(this);">SELECT</button>
-                     </div>
+                        <button class="mb-5 px-12 bg-indigo-900 text-white border-2"
+                            onclick="addPlayer(this);disable(this);">SELECT</button>
+                    </div>
                 </div>
                 <div class="bg-gray-900 text-white  rounded-lg">
                     <div class=" ">
@@ -39,7 +45,8 @@
                     <div class="text-center">
                         <h5 class="text-center font-bold ">Renato</h5>
                         <p>36 Goals & 120 Assist</p>
-                        <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2 "  onclick="addPlayer(this);disable(this);"  >SELECT</button>
+                        <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2 "
+                            onclick="addPlayer(this);disable(this);">SELECT</button>
                     </div>
                 </div>
 
@@ -50,21 +57,22 @@
                     <div class=" text-center">
                         <h5 class="text-center font-bold ">Kylian</h5>
                         <p>36 Goals & 120 Assist</p>
-                        <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2 " onclick="addPlayer(this);disable(this);" >SELECT</button>
+                        <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2 "
+                            onclick="addPlayer(this);disable(this);">SELECT</button>
                     </div>
                 </div>
-    
+
                 <div class="bg-gray-900 text-white rounded-lg">
                     <div class="ml-7  text-lg bg-secondary my-2 font-bold">
                         <h5 class="text-center text-2xl  font-bold pb-2">Selected-V</h5>
                         <div id="select">
                             <ol class=" ">
-    
+
 
 
                             </ol>
-                        </div>  
-    
+                        </div>
+
                     </div>
                 </div>
                 <div class="main-box bg-gray-900 text-white rounded-lg">
@@ -74,7 +82,8 @@
                     <div class="text-center">
                         <h5 class="text-center font-bold ">Naymer</h5>
                         <p>36 Goals & 120 Assist</p>
-                        <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2 "   onclick=" addPlayer(this);disable(this);">SELECT</button>
+                        <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2 "
+                            onclick=" addPlayer(this);disable(this);">SELECT</button>
                     </div>
                 </div>
                 <div class="main-box bg-gray-900 text-white rounded-lg">
@@ -84,7 +93,8 @@
                     <div class="text-center">
                         <h5 class="text-center font-bold ">Sergio</h5>
                         <p>36 Goals & 120 Assist</p>
-                        <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2 "   onclick=" addPlayer(this);disable(this);" >SELECT</button>
+                        <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2 "
+                            onclick=" addPlayer(this);disable(this);">SELECT</button>
                     </div>
                 </div>
                 <div class=" main-box bg-gray-900 text-white rounded-lg">
@@ -94,7 +104,8 @@
                     <div class=" text-center">
                         <h5 class="text-center font-bold ">Vitor</h5>
                         <p>36 Goals & 120 Assist</p>
-                        <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2"  onclick=" addPlayer(this);disable(this);">SELECT</button>
+                        <button class="mb-5 px-12 mt-2 bg-indigo-900 text-white border-2"
+                            onclick=" addPlayer(this);disable(this);">SELECT</button>
                     </div>
                 </div>
                 <div class="bg-gray-900 text-white rounded-lg row-span-2">
@@ -104,46 +115,51 @@
                             <label class="w-9/12 inline ml-3">Per Player</label>
                             <input type="text" name="username" class="w-full inline mr-6 bg-gray-800 "
                                 id="per-player-amount">
-    
+
                         </div><br>
-    
+
                     </div>
                     <div clas="mt-7">
                         <div>
-                            <button class=" px-20 py-2 mx-8 bg-indigo-900 font-bold text-white text-center rounded-lg" id="cal-all-player-expense">Calculate</button>
+                            <button class=" px-20 py-2 mx-8 bg-indigo-900 font-bold text-white text-center rounded-lg"
+                                id="cal-all-player-expense">Calculate</button>
                             <h1 class="w-9/12 inline ml-3 mt-6">Player expense</h1>
                             <h1 class="w-9/12 inline ml-12 mt-6 ">$<span id="set"></span></h1>
                         </div>
-    
+
                         <div class="flex mt-5">
                             <label class="w-9/12 inline ml-3">Manager</label>
-                            <input type="text" name="username" class="w-9/12 inline mr-6 bg-gray-800 " id="manager-salary">
+                            <input type="text" name="username" class="w-9/12 inline mr-6 bg-gray-800 "
+                                id="manager-salary">
                         </div><br>
                     </div>
-                    <div class="mt-5">    
+                    <div class="mt-5">
                         <div class="flex mt-5">
                             <label class="w-9/12 inline ml-3">Coach</label>
-                            <input type="text" name="username" class="w-9/12 inline mr-6 bg-gray-800 " id="coach-salary">
-    
+                            <input type="text" name="username" class="w-9/12 inline mr-6 bg-gray-800 "
+                                id="coach-salary">
+
                         </div><br>
-                        <button class="px-20 py-2 mx-2 font-bold bg-indigo-900 text-white text-center rounded-lg" id="cal-total">Calculate Total</button>
+                        <button class="px-20 py-2 mx-2 font-bold bg-indigo-900 text-white text-center rounded-lg "
+                            id="cal-total">Calculate Total</button>
                     </div>
-                    <div class="my-5">
-    
+                    <div class="my-5 ">
+
                         <h1 class="w-11/12 inline ml-6">Total</h1>
-                        <h1 class="w-9/12 inline ml-20 mt-6 ">$<span id="set-total"></span></h1>
-                    </div>    
-    
+                        <h1 class="w-9/12 inline ml-20 mt-6">$<span id="set-total"></span></h1>
+                    </div>
+
                 </div>
 
             </div>
         </section>
-        
+
     </main>
-    
-   
-   
+
+
+
     <script src="calculation.js"></script>
-   
+
 </body>
+
 </html>

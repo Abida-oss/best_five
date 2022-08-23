@@ -60,31 +60,27 @@ function calculation(length) {
         const perPlayerAmount = document.getElementById('per-player-amount');
         const perPlayerAmountStringValue = perPlayerAmount.value;
     
-        const perPlayerAmountFloatValue = parseFloat(perPlayerAmountStringValue);
-
-       
+        const perPlayerAmountFloatValue = parseFloat(perPlayerAmountStringValue);      
 
         const total = len * perPlayerAmountFloatValue;
         const perPlayer = document.getElementById('set');
         perPlayer.innerText = total;
 
         document.getElementById('cal-total').addEventListener('click', function () {
-            const mangerSalary = document.getElementById('manager-salary');
-            const mangerSalaryStringValue = mangerSalary.value;
-            const mangerSalaryFloatValue = parseFloat(mangerSalaryStringValue);
+            const managerSalary = document.getElementById('manager-salary');
+            const managerSalaryStringValue = managerSalary.value;
+            const managerSalaryFloatValue = parseFloat(managerSalaryStringValue);
 
             const coachSalary = document.getElementById('coach-salary');
             const coachSalaryStringValue = coachSalary.value;
             const coachSalaryFloatValue = parseFloat(coachSalaryStringValue);
 
 
-
-            const totalAmount = total + mangerSalaryFloatValue + coachSalaryFloatValue;
+            const totalAmount = total + managerSalaryFloatValue + coachSalaryFloatValue;
             const totalAmoutOfAll = document.getElementById('set-total');
 
             totalAmoutOfAll.innerText = totalAmount;
-            
-
+           
 
 
 
